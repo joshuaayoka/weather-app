@@ -1,0 +1,50 @@
+:root {
+    background-color: rgb(104, 186, 248);
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    max-width: 320px;
+    background-color: rgb(238, 237, 237);
+}
+
+main {
+    margin: 20px;
+}
+
+.header {
+    background-color: lightgrey;
+    color: white;
+}
+
+.search {
+    display: flex;
+}
+
+.search > input {
+    height: 50px;
+    font-family: 'Inter', sans-serif;
+    border: none;
+}
+
+.search > button {
+    font-family: 'Inter', sans-serif;
+    border: none;
+    background-color: rgb(1, 238, 1);
+    color: rgb(88, 87, 87);
+}
+
+.select {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.select-location {
+    font-family: 'Inter', sans-serif;
+    border: none;
+}
