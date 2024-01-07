@@ -83,50 +83,50 @@ export default function App() {
     console.log(locations)
 
     return (
-        <>
-        <header className="header">
-            Weather App
-        </header>
-        <main>
-            <SearchBar
-                handleChange={handleChange}
-                handleSubmit={handleSubmit}
-            />
-            <SelectLocation
-                id={id}
-                locations={locations}
-                handleChoice={handleChoice}
-                value={locations}
-            />
-            <div>
-                <strong>{locations.length > 0 && "results" in locations ? locations.results[0].name : ""}</strong>
-            </div>
-            {
-                "current" in weather ?
-                <div className='data'>
-                    <div className='temperature'>
-                        <strong>Temp</strong> {weather.current.temperature_2m} °C
-                    </div>
-                    <div className='rain'>
-                        <strong>Rain</strong> {" "}
-                        {
-                            weather.current.rain > 0 && weather.current.rain < 0.5
-                                ? "Slight rain"
-                                : weather.current.rain >= 0.5 && weather.current.rain < 4
-                                ? "Moderate rain"
-                                : weather.current.rain >= 4
-                                ? "Heavy rain"
-                                : "No rain"
-                        }             
-                    
-                    </div>
-                    <div className='wind'>
-                        <strong>Wind</strong> {weather.current.wind_speed_10m} km/h
-                    </div>
-                </div> : ""
-            }
-            
-        </main>
-        </>
+        <div className="app">
+            <header className="header">
+                Weather App
+            </header>
+            <main>
+                <SearchBar
+                    handleChange={handleChange}
+                    handleSubmit={handleSubmit}
+                />
+                <SelectLocation
+                    id={id}
+                    locations={locations}
+                    handleChoice={handleChoice}
+                    value={locations}
+                />
+                <div>
+                    <strong>{locations.length > 0 && "results" in locations ? locations.results[0].name : ""}</strong>
+                </div>
+                {
+                    "current" in weather ?
+                    <div className='data'>
+                        <div className='temperature'>
+                            <strong>Temp</strong> {weather.current.temperature_2m} °C
+                        </div>
+                        <div className='rain'>
+                            <strong>Rain</strong> {" "}
+                            {
+                                weather.current.rain > 0 && weather.current.rain < 0.5
+                                    ? "Slight rain"
+                                    : weather.current.rain >= 0.5 && weather.current.rain < 4
+                                    ? "Moderate rain"
+                                    : weather.current.rain >= 4
+                                    ? "Heavy rain"
+                                    : "No rain"
+                            }             
+                        
+                        </div>
+                        <div className='wind'>
+                            <strong>Wind</strong> {weather.current.wind_speed_10m} km/h
+                        </div>
+                    </div> : ""
+                }
+                
+            </main>
+        </div>
     )
 }

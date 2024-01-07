@@ -6,11 +6,12 @@
 }
 
 body {
-    margin: 0;
+    margin: 200px;
     display: flex;
     place-items: center;
     max-width: 320px;
     background-color: rgb(238, 237, 237);
+    
 }
 
 main {
@@ -20,6 +21,8 @@ main {
 .header {
     background-color: lightgrey;
     color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .search {
@@ -37,6 +40,11 @@ main {
     border: none;
     background-color: rgb(1, 238, 1);
     color: rgb(88, 87, 87);
+    margin-left: 10px;
+}
+
+.search > button:hover {
+    background-color: rgb(76, 255, 76);
 }
 
 .select {
@@ -47,4 +55,5 @@ main {
 .select-location {
     font-family: 'Inter', sans-serif;
     border: none;
+    border-radius: 4px;
 }
