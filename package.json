@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/joshuaayoka/weather-app",
   "name": "weather-app",
   "private": true,
   "version": "0.0.0",
@@ -26,5 +27,10 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "gh-pages": "^6.1.1",
     "vite": "^5.0.8"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
