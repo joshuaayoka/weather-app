@@ -57,7 +57,7 @@ export default function App() {
                     return { latitude, longitude };
                 } 
                 else {
-                  return null; // City with the given id not found
+                  return null;
                 }
             })
         }
