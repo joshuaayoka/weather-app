@@ -56,4 +56,11 @@ main {
     font-family: 'Inter', sans-serif;
     border: none;
     border-radius: 4px;
+    padding-bottom: 0;
+}
+
+.attribution {
+    font-size: 0.5rem;
+    background-color: gold;
+    margin: 0 60px;
 }
