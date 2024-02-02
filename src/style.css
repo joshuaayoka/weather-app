@@ -60,11 +60,10 @@ main {
 }
 
 .attribution {
-    font-size: 0.5rem;
-    background-color: gold;
-    margin: 0 60px;
+    font-size: 0.5rem;    
 }
 
 .attribution-container {
     background-color: chartreuse;
+    text-align: center;
 }
