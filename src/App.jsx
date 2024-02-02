@@ -98,7 +98,9 @@ export default function App() {
                     handleChoice={handleChoice}
                     value={locations}
                 />
-                <a className='attribution' href="https://open-meteo.com/">Weather data by Open-Meteo.com</a>
+                <div className='attribution-container'>
+                    <a className='attribution' href="https://open-meteo.com/">Weather data by Open-Meteo.com</a>
+                </div>
                 <div>
                     <strong>{locations.length > 0 && "results" in locations ? locations.results[0].name : ""}</strong>
                 </div>
